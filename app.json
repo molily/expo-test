@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "expo-test",
+    "slug": "expo-test",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/adaptive-icon.png",
+    "scheme": "expotest",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "de.expotest.expotest",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "de.expotest.expotest",
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/adaptive-icon.png"
+    },
+    "notification": {
+      "color": "#001437",
+      "iosDisplayInForeground": true
+    },
+    "developmentClient": {
+      "silentLaunch": true
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/adaptive-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#001437"
+        }
+      ],
+      "expo-router",
+      [
+        "react-native-video",
+        {
+          "enableNotificationControls": true,
+          "enableBackgroundAudio": true,
+          "enableAndroidPictureInPicture": true,
+          "androidExtensions": {
+            "useExoplayerSmoothStreaming": false,
+            "useExoplayerDash": true,
+            "useExoplayerHls": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9319020f-3881-4390-bb35-fbf605413f0f"
+      }
+    }
+  }
+}
