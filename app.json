@@ -54,7 +54,7 @@
           "androidExtensions": {
             "useExoplayerSmoothStreaming": false,
             "useExoplayerDash": true,
-            "useExoplayerHls": true
+            "useExoplayerHls": false
           }
         }
       ]
